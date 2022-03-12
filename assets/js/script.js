@@ -13,7 +13,7 @@ function writePassword() {
 }
 
 
-// PASWORD LENGTH FUNCTION
+// PASSWORD LENGTH FUNCTION
 function passwordLength() {
     var length = "";
   
@@ -30,7 +30,6 @@ function passwordLength() {
     }
     return length;
 }
-
 
 // PASSWORD LOWERCASE VALUES
 function passwordLowercase() {
@@ -124,39 +123,38 @@ function passwordSymbols() {
         return passwordSymbols();
     }
 }
-
-
+ 
 // PASSWORD GENERATOR FUNCTION
 function generatePassword() {
     var chars = "";
     var pwdLength = passwordLength();
     var password = "";
-
+ 
     var containLowercase = passwordLowercase();
     var containUppercase = passwordUppercase();
     var containNumber = passwordNumbers();
     var containSymbol = passwordSymbols();
-
+ 
     if (containLowercase) {
         var lwrchars = "abcdefghijklmnopqrstuvwxyz";
         chars = chars + lwrchars;
     }
-
+ 
     if (containUppercase) {
         var uprchars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         chars = chars + uprchars;
     }
-
+ 
     if (containNumber) {
         var nmrchars = "0123456789"
         chars = chars + nmrchars;
     }
-
+ 
     if (containSymbol) {
         var smbchars = "!#$%&'()*+,-./:;<=>?@^_`{|}~";
         chars = chars + smbchars;
     }
-
+ 
     if (containLowercase || containUppercase || containNumber || containSymbol) {
         for (var i = 0; i <= pwdLength; i++) {
             var rdmNbr = Math.floor(Math.random() * chars.length);
@@ -164,7 +162,7 @@ function generatePassword() {
         }
     return password;
     }
-
+ 
     else {
         window.alert("You need to select at least one character option! Try again.");
         return generatePassword();
