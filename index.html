@@ -1,114 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Home</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
-<body>
-
-<!-- NAVBAR -->
-    <header>
-        <h1>
-            <a href="/">Rose Halim</a>
-        </h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#work">Work</a>
-                </li>
-                <li>
-                    <a href="#contact-me">Contact Me</a>
-                </li>
-                <li>
-                    <a href="https://www.google.ca/">Resume</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-<!-- HERO -->
-    <section class="hero">
-        <div class="hero-cta">
-            <h2>Subtitle</h2>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
         </div>
-    </section>
-
-<!-- CONTENT -->
-    <section class="about-me" id="about-me">
-            <h2 class="subtitle">About Me</h2>
-            <div class="bio">
-                <div class="bio-img">
-                    <img src="./assets/images/pfp.jpg" alt="John Doe sitting on a rock enjoying his hobby of photography" />
-                </div>
-                <div class="bio-text">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis, neque sed maximus feugiat, nisi arcu ornare velit, eu sagittis neque ante a ligula. Vestibulum felis leo, ultricies ac metus sit amet, tempor molestie turpis. Duis ligula risus, condimentum quis finibus eget, vestibulum et ipsum. Fusce eget lacinia nulla, id accumsan augue. Nunc hendrerit, leo eget commodo cursus, odio leo vulputate quam, ac gravida augue massa malesuada neque. Pellentesque elementum blandit nisi, quis tincidunt mi blandit vel. Suspendisse a posuere urna. Nam auctor condimentum lobortis. Cras ultricies viverra lectus, eget tempus mi varius vitae. Nam malesuada lorem et venenatis luctus. Curabitur at bibendum eros. Praesent imperdiet libero tortor, facilisis vehicula purus ullamcorper sit amet. Pellentesque id leo turpis. In posuere mauris vitae lectus elementum vulputate. Quisque eros elit, porttitor a augue eget, molestie pellentesque urna.
-                    </p>
-                </div>
-            </div>
-    </section>
-
-    <section class="work" id="work">
-        <h2 class="subtitle">Work</h2>
-        <div class="work-section">
-            <article class="projects">
-                <a href="https://www.awwwards.com/"><img class="surf" src="./assets/images/surf.jpeg" alt=""></a>
-                <div class="project-info">
-                    <h3>Surf Report</h3>
-                    <h4>MERN Stack</h4>
-                </div>
-            </article>
-    
-            <article class="projects">
-                <a href="https://www.behance.net/"><img class="wall" src="./assets/images/led-wall.jpg" alt=""></a>
-                <div class="project-info">
-                    <h3>LED Wall</h3>
-                    <h4>Node / IoT</h4>
-                </div>
-            </article>
-            
-            <article class="projects">
-                <a href="https://dribbble.com/"><img class="calc" src="./assets/images/calculator.jpeg" alt=""></a>
-                <div class="project-info">
-                    <h3>Calculator</h3>
-                    <h4>React / Javascript / CSS</h4>
-                </div>
-            </article>
-    
-            <article class="projects">
-                <a href="https://www.figma.com/"><img class="puzzle" src="./assets/images/puzzle.jpeg" alt=""></a>
-                <div class="project-info">
-                    <h3>Pastel Puzzles</h3>
-                    <h4>MERN Stack</h4>
-                </div>
-            </article>
-    
-            <article class="projects">
-                <a href="https://rosemariehalim.github.io/run-buddy/"><img class="run" src="./assets/images/run-buddy.jpg" alt=""></a>
-                <div class="project-info">
-                    <h3>Run Buddy</h3>
-                    <h4>HTML / CSS</h4>
-                </div>
-            </article>
+        <div class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
         </div>
-    </section>
-
-<!-- FOOTER -->
-    <footer class="contact-me" id="contact-me">
-            <h2 class="subtitle">Contact Me</h2>
-            <div class="contact-info">
-                <a href="https://www.messenger.com/">555-555-5555</a>
-                <a href="https://www.google.ca/">rosehalim@website.com</a>
-                <a href="https://github.com/">GitHub</a>
-                <a href="https://twitter.com/?lang=en">Twitter</a>
-                <a href="https://open.spotify.com/">Spotify</a>
-            </div>
-    </footer>
-</body>
+        <div class="card-footer">
+          <button id="generate" class="btn">Generate Password</button>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
