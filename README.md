@@ -1,49 +1,53 @@
-#   Challenge 02 - Professional Portfolio
+#   Challenge 03 - Password Generator
 
 ##  User Story
 
-AS AN employer
-I WANT to view a potential employee's deployed portfolio of work samples
-SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
+AS AN employee with access to sensitive data
+I WANT to randomly generate a password that meets certain criteria
+SO THAT I can create a strong password that provides greater security
 
 ## Acceptance Criteria
 
-GIVEN I need to sample a potential employee's previous work
-WHEN I load their portfolio
-THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-WHEN I click one of the links in the navigation
-THEN the UI scrolls to the corresponding section
-WHEN I click on the link to the section about their work
-THEN the UI scrolls to a section with titled images of the developer's applications
-WHEN I am presented with the developer's first application
-THEN that application's image should be larger in size than the others
-WHEN I click on the images of the applications
-THEN I am taken to that deployed application
-WHEN I resize the page or view the site on various screens and devices
-THEN I am presented with a responsive layout that adapts to my viewport
+GIVEN I need a new, secure password
+WHEN I click the button to generate a password
+THEN I am presented with a series of prompts for password criteria
+WHEN prompted for password criteria
+THEN I select which criteria to include in the password
+WHEN prompted for the length of the password
+THEN I choose a length of at least 8 characters and no more than 128 characters
+WHEN asked for character types to include in the password
+THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
+WHEN I answer each prompt
+THEN my input should be validated and at least one character type should be selected
+WHEN all prompts are answered
+THEN a password is generated that matches the selected criteria
+WHEN the password is generated
+THEN the password is either displayed in an alert or written to the page
 
 ---
 
-# My Portfolio
+# Password Generator
 
 ## Purpose
-A portfolio to introduce myself and provide previous work and experience along with contact information. 
+As a developer, I want to create a password generator where users can choose the length and intricacy/strength of their password.
 
 ## Built With
 * HTML
 * CSS
+* JavaScript
 
 ## Website
-https://rosemariehalim.github.io/02-challenge/
+https://rosemariehalim.github.io/03-challenge/
 
 ---
 
-## Challenge 2.0
+## Challenge 3.0
 
-* planned out code and wireframing
-* added core html and css
-* personalized base design to make unique
-* made links usable
-* made UI scroll to section when clicking header links
-* applied css to create hover effects with portfolio section
-* added media queries to make site responsive
+* planned out code
+* linked css and js to HTML file
+* created develop branch
+* created password length function with while loop statement
+* added the functions and boolians for the lowercase, uppercase, numeric, and/or special characters
+* created password generation function that provides a warning pop-up when neither boolian is true
+* tested and fixed broken code
+* merged develop branch into main and pushed to GitHub
